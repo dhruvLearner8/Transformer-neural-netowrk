@@ -1,2 +1,60 @@
-ReadME
+#TRANSFORMER
+This project walks through building a decoder-only Transformer (GPT-style) model for autoregressive text generation.
+Starting from the basic concepts of tokenization and embeddings, it gradually builds up to a full Transformer block featuring multi-head self-attention, positional encodings, and feedforward layers.
 
+The final model can generate coherent sequences of text after being trained on a small dataset (e.g., Shakespeare, names, or custom text).
+
+Learning Objectives
+
+By completing this project, I aimed to:
+
+Understand how Transformers work under the hood
+
+Implement each component manually in PyTorch
+
+Learn the attention mechanism, residual connections, and layer normalization
+
+Train a small GPT-like model capable of text generation
+
+Experiment with scaling, hyperparameter tuning, and sampling strategies
+
+#Architecture Details
+1. Tokenization & Embeddings
+
+Converted raw text into token IDs using a character-level vocabulary.
+
+Implemented token embeddings and positional encodings to give the model a sense of word order.
+
+2. Self-Attention Mechanism
+
+Implemented scaled dot-product attention from scratch:
+
+Query (Q), Key (K), and Value (V) projections
+
+Softmax normalization
+
+Masking for autoregressive decoding
+
+3. Multi-Head Attention
+
+Extended attention into multiple heads for richer representation learning.
+
+Concatenated and linearly projected heads for output integration.
+
+4. Feedforward Network
+
+Two linear layers with a non-linear activation (ReLU or GELU).
+
+Added dropout for regularization.
+
+5. Transformer Block
+
+Combined Multi-Head Attention, Feedforward, Residual Connections, and Layer Normalization.
+
+Stacked multiple blocks to increase model capacity.
+
+6. Output Head
+
+Linear layer mapping embeddings to logits over the vocabulary.
+
+Softmax for next-token probability prediction.
