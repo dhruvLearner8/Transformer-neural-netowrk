@@ -1,4 +1,4 @@
-#TRANSFORMER
+# TRANSFORMER
 This project walks through building a decoder-only Transformer (GPT-style) model for autoregressive text generation.
 Starting from the basic concepts of tokenization and embeddings, it gradually builds up to a full Transformer block featuring multi-head self-attention, positional encodings, and feedforward layers.
 
@@ -18,7 +18,7 @@ Train a small GPT-like model capable of text generation
 
 Experiment with scaling, hyperparameter tuning, and sampling strategies
 
-#Architecture Details
+# Architecture Details
 1. Tokenization & Embeddings
 
 Converted raw text into token IDs using a character-level vocabulary.
