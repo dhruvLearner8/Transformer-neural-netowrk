@@ -1,3 +1,5 @@
+# Neural Netowrk for Name Generation Please visit - https://github.com/dhruvLearner8/Simple-Name-Generation-Engine-Using-Neural-Network
+
 # TRANSFORMER
 This project walks through building a decoder-only Transformer (GPT-style) model for autoregressive text generation.
 Starting from the basic concepts of tokenization and embeddings, it gradually builds up to a full Transformer block featuring multi-head self-attention, positional encodings, and feedforward layers.
